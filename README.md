@@ -20,19 +20,14 @@ A crescente demanda por aplicações web complexas e escaláveis exige soluçõe
 
 A arquitetura "Vertical Slices" propõe uma organização do código em fatias verticais, onde cada fatia representa uma funcionalidade completa da aplicação. Esta abordagem contrasta com a arquitetura em camadas tradicional, oferecendo benefícios como:
 
-Maior coesão: Cada fatia contém tudo o que é necessário para uma funcionalidade específica, incluindo modelos, serviços e controladores.
-Melhor isolamento: Facilita a implementação de mudanças e novas funcionalidades sem impactar outras partes do sistema.
-Testabilidade: A separação clara de funcionalidades simplifica a criação de testes unitários e de integração.
+- Maior coesão: Cada fatia contém tudo o que é necessário para uma funcionalidade específica, incluindo modelos, serviços e controladores.
+- Melhor isolamento: Facilita a implementação de mudanças e novas funcionalidades sem impactar outras partes do sistema.
+- Testabilidade: A separação clara de funcionalidades simplifica a criação de testes unitários e de integração.
+- Facilidade de manutenção: Mudanças e melhorias podem ser realizadas em uma fatia específica sem afetar outras partes do sistema.
+- Escalabilidade: A API pode ser expandida de forma modular, adicionando novas funcionalidades como fatias independentes.
+- Eficiência no desenvolvimento: Equipes podem trabalhar de forma paralela em diferentes fatias, acelerando o desenvolvimento.
 
 O uso do Django e do DjangoRestFramework proporciona uma base sólida para o desenvolvimento de APIs RESTful, aproveitando a robustez e a flexibilidade do Django combinado com as ferramentas especializadas do DjangoRestFramework para a criação de APIs.
-
-#### Impacto e Benefícios
-
-A implementação desta API com a "Vertical Slices Architecture" oferece vários benefícios tangíveis:
-
-Facilidade de manutenção: Mudanças e melhorias podem ser realizadas em uma fatia específica sem afetar outras partes do sistema.
-Escalabilidade: A API pode ser expandida de forma modular, adicionando novas funcionalidades como fatias independentes.
-Eficiência no desenvolvimento: Equipes podem trabalhar de forma paralela em diferentes fatias, acelerando o desenvolvimento.
 
 ## 👨‍💻 Desenvolvimento
 
@@ -54,7 +49,7 @@ Criação de Endpoints: Foram desenvolvidos endpoints específicos para cada cas
 
 A fase de testes foi crucial para garantir a qualidade e a funcionalidade da API. Foram realizados testes unitários, de integração e end-to-end (E2E) para assegurar que cada fatia da API funcionasse corretamente e que o sistema como um todo atendesse aos requisitos de performance e segurança.
 
-- Testes Unitários: Foram criados para cada modelo, serializer, e view, garantindo que cada componente individual funcionasse conforme esperado.
+- Testes Unitários: Foram criados para cada entidade, caso de uso, modelo, serializer, repositório e view, garantindo que cada componente individual funcionasse conforme esperado.
 
 - Testes de Integração: Verificaram a interação entre diferentes componentes da API, assegurando que os dados fluíssem corretamente através do sistema e que todas as dependências fossem resolvidas adequadamente.
 
