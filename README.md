@@ -64,6 +64,10 @@ A fase de testes foi crucial para garantir a qualidade e a funcionalidade da API
 
 A documentação da API foi criada utilizando ferramentas como o Swagger e o DRF-YASG, que permitem a geração automática de documentação a partir do código-fonte. Isso facilitou a compreensão e o uso da API por outros desenvolvedores e usuários finais.
 
+## ⚠️ Alerta
+
+Embora eu conheça um pouco de Pythton, não sou versado em Django. Tenho certeza que alguém especializado no framework vai encontrar várias formas de melhorar o código e os testes. Meu objetivo principal era somente demonstrar que é possível e relativamente fácil seguir outros padrões arquitetônicos em Django além do _default_.
+
 ## ⚙️ Instalação
 
 1. Clone este repositório:
