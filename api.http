@@ -1,0 +1,56 @@
+@host = http://127.0.0.1:8000/api
+
+### Get reports
+# @name getReports
+GET {{host}}/reports/
+
+### Stores the ID and the email of the first report
+@id = {{getReports.response.body.data[0].id}}
+@email = {{getReports.response.body.data[0].email}}
+
+### Serch report by email (also by title, complaint, report_type and status)
+GET {{host}}/reports/?search_query={{email}}
+
+### Order report by title (Prefix with '-' for descending order (e.g. '-title'))
+GET {{host}}/reports/?order_by=title
+
+### Paginate reports
+GET {{host}}/reports/?page=1&per_page=2
+
+### Get report
+GET {{host}}/reports/{{id}}
+
+### Create report
+POST {{host}}/reports/
+content-type: application/json
+
+{
+    "title" : "Globo.com teve um vazamento de informações",
+    "complaint": "Globo.com teve um vazamento de informações",
+    "report_type": "DATA_LEAK"
+}
+
+### Update report
+PUT {{host}}/reports/{{id}}/
+content-type: application/json
+
+{
+    "title" : "Gov.br teve um vazamento de informações",
+    "complaint": "Gov.br teve um vazamento de informações",
+    "report_type": "DATA_LEAK",
+    "report_status": "COMPLETED",
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+}
+
+### Partialy update report
+PATCH {{host}}/reports/{{id}}/
+content-type: application/json
+
+{
+    "report_status": "PROCESSING"
+}
+
+### Delete report
+DELETE {{host}}/reports/{{id}}/
+
