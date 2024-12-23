@@ -1,6 +1,6 @@
 asgiref==3.8.1
 black==24.10.0
-click==8.1.7
+click==8.1.8
 coverage==7.6.9
 Django==5.1.4
 django-cors-headers==4.6.0
