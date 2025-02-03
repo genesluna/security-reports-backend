@@ -1,5 +1,5 @@
 asgiref==3.8.1
-black==24.10.0
+black==25.1.0
 click==8.1.8
 coverage==7.6.10
 Django==5.1.5
