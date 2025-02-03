@@ -23,7 +23,7 @@ pytest==8.3.4
 pytest-cov==6.0.0
 pytest-django==4.9.0
 pytest-mock==3.14.0
-pytz==2024.2
+pytz==2025.1
 PyYAML==6.0.2
 sqlparse==0.5.3
 uritemplate==4.1.1
